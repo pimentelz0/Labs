@@ -1,0 +1,6 @@
+{
+  "name": "Capy Labs",
+  "description": "Modern and professional landing page for Capy Labs tech startup, featuring simple tools for complex businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
