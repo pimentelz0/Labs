@@ -25,36 +25,20 @@ export const Logo: React.FC<LogoProps> = ({
         xmlns="http://www.w3.org/2000/svg"
         className="shrink-0 transition-transform duration-300 hover:scale-105"
         {...props}
-        id="capylabs-logo-svg"
+        id="hefestus-logo-svg"
       >
-        <defs>
-          <linearGradient id="capyGreenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#10b981" />
-            <stop offset="100%" stopColor="#059669" />
-          </linearGradient>
-        </defs>
-
-        {/* The White "C" shape (3/4 of a ring) */}
+        {/* Geometric H shape filled with brand green #10b981 */}
         <path
-          d="M 50,18 A 32,32 0 1 0 82,50 L 66,50 A 16,16 0 1 1 50,34 Z"
-          fill="#FFFFFF"
-          stroke="none"
-        />
-
-        {/* The Leaf/Rounded-Square shape in the top-right quadrant */}
-        {/* Top-right quadrant bounded by x=50..82, y=18..50.
-            We position it slightly offset to create empty whitespace margin */}
-        <path
-          d="M 56,18 H 68 C 75.7,18 82,24.3 82,32 V 34 C 82,39.5 77.5,44 72,44 H 56 V 18 Z"
-          fill="url(#capyGreenGradient)"
+          d="M 24,24 C 24,21.8 25.8,20 28,20 L 36,20 C 38.2,20 40,21.8 40,24 L 40,44 L 60,44 L 60,24 C 60,21.8 61.8,20 64,20 L 72,20 C 74.2,20 76,21.8 76,24 L 76,76 C 76,78.2 74.2,80 72,80 L 64,80 C 61.8,80 60,78.2 60,76 L 60,56 L 40,56 L 40,76 C 40,78.2 38.2,80 36,80 L 28,80 C 25.8,80 24,78.2 24,76 Z"
+          fill="#10b981"
           stroke="none"
         />
       </svg>
 
       {/* Styled Wordmark */}
       {showText && (
-        <span className={`font-sans text-xl font-bold tracking-tight ${textColor}`} id="capylabs-logo-text">
-          Capy <span className="text-emerald-500">Labs</span>
+        <span className={`font-sans text-lg font-bold tracking-widest text-white`} id="hefestus-logo-text">
+          HEFESTUS
         </span>
       )}
     </div>

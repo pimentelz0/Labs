@@ -30,21 +30,6 @@ export const PRODUCTS: Product[] = [
     meta: 'Suíte Corporativa',
     linkText: 'Acessar o Capitae Business',
     linkUrl: 'https://capitae-business.vercel.app'
-  },
-  {
-    id: 'petzy',
-    name: 'Petzy',
-    tagline: 'Acompanhamento proativo de saúde e cuidados para o seu pet.',
-    description: 'Organize os cuidados do seu pet com total tranquilidade. Gerencie carteiras de vacinação precisas, histórico veterinário, restrições alimentares e rotinas de cuidados compartilhadas.',
-    features: [
-      'Prontuário veterinário unificado e digital',
-      'Lembretes espertos de medicamentos e consultas',
-      'Acesso compartilhado com níveis personalizados'
-    ],
-    iconName: 'HeartHandshake',
-    meta: 'Utilitário de Pet Care',
-    linkText: 'Em breve',
-    inDevelopment: true
   }
 ];
 

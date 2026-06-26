@@ -5,7 +5,7 @@ import { VALUES } from '../data';
 
 export const Values: React.FC = () => {
   return (
-    <section className="py-24 md:py-32 bg-[#050e09]" id="values">
+    <section className="py-24 md:py-32 bg-[#000000]" id="values">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         {/* Section Header */}

@@ -33,7 +33,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050e09] text-slate-200 antialiased selection:bg-emerald-500/30 selection:text-white" id="main-landing-container">
+    <div className="min-h-screen bg-[#000000] text-slate-200 antialiased selection:bg-emerald-500/30 selection:text-white" id="main-landing-container">
       {/* Sticky high-contrast navigation bar */}
       <Navbar />
 

@@ -18,7 +18,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onCtaClick })
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.6 }}
-      className="group relative flex flex-col justify-between p-8 md:p-10 bg-[#07130b] border border-white/[0.04] rounded-xl hover:border-emerald-500/20 transition-all duration-300 shadow-xl overflow-hidden"
+      className="group relative flex flex-col justify-between p-8 md:p-10 bg-[#1e293b]/50 backdrop-blur-md border border-white/[0.04] rounded-xl hover:border-emerald-500/20 transition-all duration-300 shadow-xl overflow-hidden"
       id={`product-card-${product.id}`}
     >
       {/* Background Hover Glow */}

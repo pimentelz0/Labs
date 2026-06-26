@@ -19,7 +19,7 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
     if (preselectedProduct) {
       setFormData((prev) => ({
         ...prev,
-        message: `Olá equipe da Capy Labs! Gostaríamos de entender mais sobre integrações com o ${preselectedProduct} em nossa operação. Vamos conversar.`,
+        message: `Olá equipe da HEFESTUS! Gostaríamos de entender mais sobre integrações com o ${preselectedProduct} em nossa operação. Vamos conversar.`,
       }));
     }
   }, [preselectedProduct]);
@@ -56,11 +56,11 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
     setTimeout(() => setCopiedEmail(false), 2000);
   };
 
-  const salesEmail = 'inquire@capylabs.com';
+  const salesEmail = 'inquire@hefestus.com';
   const whatsappNumber = '5511999999999'; // Example standard structure
 
   return (
-    <section className="py-24 md:py-32 bg-[#040c07] border-t border-white/[0.03]" id="contact">
+    <section className="py-24 md:py-32 bg-[#000000] border-t border-white/[0.03]" id="contact">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-stretch">
           
@@ -113,7 +113,7 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
                     </div>
                   </div>
                   <a
-                    href={`https://wa.me/${whatsappNumber}?text=Olá%20equipe%20Capy%20Labs%21%20Tenho%20interesse%20nas%20soluções.`}
+                    href={`https://wa.me/${whatsappNumber}?text=Olá%20equipe%20HEFESTUS%21%20Tenho%20interesse%20nas%20soluções.`}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-xs text-white font-semibold rounded transition-colors cursor-pointer"
@@ -131,7 +131,7 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
           </div>
 
           {/* Right Column: Beautiful intake form */}
-          <div className="lg:col-span-7 bg-[#07130b] border border-white/[0.04] p-8 md:p-10 rounded-xl relative overflow-hidden flex flex-col justify-center">
+          <div className="lg:col-span-7 bg-[#1e293b]/50 backdrop-blur-md border border-white/[0.04] p-8 md:p-10 rounded-xl relative overflow-hidden flex flex-col justify-center">
             {isSuccess ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -143,7 +143,7 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Solicitação enviada com segurança</h3>
                 <p className="text-xs text-slate-400 max-w-md leading-relaxed">
-                  Obrigado por entrar em contato com a Capy Labs. Registramos sua proposta com sucesso, e os dados foram transmitidos diretamente para nossa mesa de engenharia de soluções.
+                  Obrigado por entrar em contato com a HEFESTUS. Registramos sua proposta com sucesso, e os dados foram transmitidos diretamente para nossa mesa de engenharia de soluções.
                 </p>
                 <button
                   onClick={() => setIsSuccess(false)}
@@ -166,10 +166,10 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Ex: Elena Rostova"
-                      className="w-full bg-[#050e09] border border-white/[0.06] focus:border-emerald-500/30 px-4 py-3 rounded-md text-sm text-white placeholder-slate-600 focus:outline-none transition-colors duration-200 font-sans"
+                      className="w-full bg-[#000000]/60 border border-white/[0.06] focus:border-emerald-500/30 px-4 py-3 rounded-md text-sm text-white placeholder-slate-600 focus:outline-none transition-colors duration-200 font-sans"
                     />
                   </div>
-
+ 
                   {/* Company Field */}
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="company" className="text-[10px] uppercase font-mono tracking-wider text-slate-500">Empresa (Opcional)</label>
@@ -180,7 +180,7 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
                       value={formData.company}
                       onChange={handleInputChange}
                       placeholder="Ex: Acme Logística"
-                      className="w-full bg-[#050e09] border border-white/[0.06] focus:border-emerald-500/30 px-4 py-3 rounded-md text-sm text-white placeholder-slate-600 focus:outline-none transition-colors duration-200 font-sans"
+                      className="w-full bg-[#000000]/60 border border-white/[0.06] focus:border-emerald-500/30 px-4 py-3 rounded-md text-sm text-white placeholder-slate-600 focus:outline-none transition-colors duration-200 font-sans"
                     />
                   </div>
                 </div>
@@ -196,10 +196,10 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="Ex: elena@acme.com"
-                    className="w-full bg-[#050e09] border border-white/[0.06] focus:border-emerald-500/30 px-4 py-3 rounded-md text-sm text-white placeholder-slate-600 focus:outline-none transition-colors duration-200 font-sans"
+                    className="w-full bg-[#000000]/60 border border-white/[0.06] focus:border-emerald-500/30 px-4 py-3 rounded-md text-sm text-white placeholder-slate-600 focus:outline-none transition-colors duration-200 font-sans"
                   />
                 </div>
-
+ 
                 {/* Message field */}
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="message" className="text-[10px] uppercase font-mono tracking-wider text-slate-500">Conte-nos sobre o seu projeto *</label>
@@ -211,7 +211,7 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Descreva de forma simples suas necessidades ou gargalos operacionais..."
-                    className="w-full bg-[#050e09] border border-white/[0.06] focus:border-emerald-500/30 px-4 py-3 rounded-md text-sm text-white placeholder-slate-600 focus:outline-none transition-colors duration-200 font-sans resize-none"
+                    className="w-full bg-[#000000]/60 border border-white/[0.06] focus:border-emerald-500/30 px-4 py-3 rounded-md text-sm text-white placeholder-slate-600 focus:outline-none transition-colors duration-200 font-sans resize-none"
                   />
                 </div>
 
@@ -220,7 +220,7 @@ export const Contact: React.FC<ContactProps> = ({ preselectedProduct = '' }) => 
                   <button
                     disabled={isSubmitting}
                     type="submit"
-                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-semibold tracking-wide uppercase text-[#040c07] bg-emerald-400 hover:bg-emerald-300 disabled:bg-emerald-800 disabled:text-slate-400 rounded-md transition-all duration-200 cursor-pointer shadow-md shadow-emerald-500/10"
+                    className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-semibold tracking-wide uppercase text-[#000000] bg-emerald-400 hover:bg-emerald-300 disabled:bg-emerald-800 disabled:text-slate-400 rounded-md transition-all duration-200 cursor-pointer shadow-md shadow-emerald-500/10"
                   >
                     {isSubmitting ? (
                       <span className="flex items-center gap-2">

@@ -1,6 +1,6 @@
 {
-  "name": "Capy Labs",
-  "description": "Modern and professional landing page for Capy Labs tech startup, featuring simple tools for complex businesses.",
+  "name": "Hefestus",
+  "description": "Forjamos as ferramentas. Você constrói o negócio. Softwares robustos e minimalistas para gestão financeira e operações corporativas.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

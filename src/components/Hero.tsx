@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen pt-32 pb-20 flex flex-col items-center justify-center overflow-hidden bg-[#040c07]" id="hero">
+    <section className="relative min-h-screen pt-32 pb-20 flex flex-col items-center justify-center overflow-hidden bg-[#000000]" id="hero">
       {/* Premium CSS Grid Pattern Background */}
       <div 
         className="absolute inset-0 pointer-events-none opacity-[0.25]"
@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
           className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-8 text-xs font-semibold tracking-wider uppercase text-emerald-400"
         >
           <Sparkles size={12} />
-          <span>Plataformas operacionais de última geração</span>
+          <span>Forjamos ferramentas que elevam construtores</span>
         </motion.div>
 
         {/* Grand Centered Representation of the Logo Icon */}
@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.1] max-w-4xl"
         >
-          Criando ferramentas simples para <span className="text-emerald-400">empresas complexas</span>
+          Forjamos as ferramentas. <br className="hidden sm:inline" />Você constrói o <span className="text-emerald-400">negócio</span>.
         </motion.h1>
 
         {/* Professional, Clear Subheadline */}
@@ -76,7 +76,7 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl mb-10 font-normal leading-relaxed"
         >
-          Projetamos softwares robustos e minimalistas para otimizar a gestão financeira, automatizar operações corporativas e simplificar o cuidado pet. Criado com precisão, sem excessos e com total fidedignidade.
+          Softwares robustos e minimalistas para gestão financeira, operações corporativas e controle total do seu negócio.
         </motion.p>
 
         {/* Modern Interactive Call-to-Actions */}
@@ -88,7 +88,7 @@ export const Hero: React.FC = () => {
         >
           <button
             onClick={handleScrollToProducts}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-[#040c07] bg-emerald-400 hover:bg-emerald-300 rounded-md transition-all duration-200 shadow-md hover:shadow-emerald-500/20 cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-[#000000] bg-emerald-400 hover:bg-emerald-300 rounded-md transition-all duration-200 shadow-md hover:shadow-emerald-500/20 cursor-pointer"
           >
             Explorar produtos
             <ArrowRight size={15} />
@@ -102,7 +102,7 @@ export const Hero: React.FC = () => {
             }}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-slate-300 hover:text-white bg-white/[0.04] border border-white/[0.08] hover:bg-white/[0.08] rounded-md transition-all duration-200 cursor-pointer"
           >
-            Solicitar soluções sob medida
+            Falar com a equipe
           </button>
         </motion.div>
 
@@ -111,7 +111,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.6 }}
-          className="w-full max-w-4xl border border-white/[0.06] bg-[#07130b] rounded-xl overflow-hidden shadow-2xl p-4 md:p-6 text-left"
+          className="w-full max-w-4xl border border-white/[0.06] bg-[#1e293b]/50 backdrop-blur-md rounded-xl overflow-hidden shadow-2xl p-4 md:p-6 text-left"
         >
           {/* Mock Console / Window Header */}
           <div className="flex items-center justify-between border-b border-white/[0.05] pb-4 mb-4 select-none">
@@ -119,7 +119,7 @@ export const Hero: React.FC = () => {
               <span className="w-3 h-3 rounded-full bg-red-500/40" />
               <span className="w-3 h-3 rounded-full bg-yellow-500/40" />
               <span className="w-3 h-3 rounded-full bg-green-500/40" />
-              <span className="text-xs text-slate-500 font-mono ml-2">capy_labs_status.sh</span>
+              <span className="text-xs text-slate-500 font-mono ml-2">hefestus_forge.sh</span>
             </div>
             <div className="flex items-center gap-4 text-xs font-mono text-slate-500">
               <span className="flex items-center gap-1">
@@ -134,7 +134,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Clean Dashboard Elements (Code/Stats) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-mono text-xs">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-mono text-xs">
             {/* Column 1 - Treasury Run */}
             <div className="p-4 bg-white/[0.01] border border-white/[0.03] rounded-lg">
               <div className="text-slate-500 uppercase tracking-wider mb-2">TESOURARIA CAPITAE</div>
@@ -154,17 +154,6 @@ export const Hero: React.FC = () => {
               <div className="mt-3 text-slate-600 border-t border-white/[0.03] pt-2">
                 &gt; sync_warehouse_tokyo --success<br />
                 &gt; calc_unit_economics
-              </div>
-            </div>
-
-            {/* Column 3 - Companion Health */}
-            <div className="p-4 bg-white/[0.01] border border-white/[0.03] rounded-lg">
-              <div className="text-slate-500 uppercase tracking-wider mb-2">TELEMETRIA PETZY</div>
-              <div className="text-lg font-semibold text-white mb-1">Portal de Cuidados Ativo</div>
-              <div className="text-[10px] text-emerald-400">● 100% DA AGENDA CUMPRIDA</div>
-              <div className="mt-3 text-slate-600 border-t border-white/[0.03] pt-2">
-                &gt; push_vaccine_reminders<br />
-                &gt; shared_profile_family_synced
               </div>
             </div>
           </div>

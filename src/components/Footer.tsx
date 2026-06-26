@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#030905] border-t border-white/[0.03] py-16 md:py-24" id="footer">
+    <footer className="bg-[#000000] border-t border-white/[0.03] py-16 md:py-24" id="footer">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-start mb-16">
           
@@ -44,11 +44,6 @@ export const Footer: React.FC = () => {
               <li>
                 <button onClick={() => handleScrollTo('product-card-capitae-business')} className="hover:text-white transition-colors cursor-pointer text-left focus:outline-none">
                   Capitae Business
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleScrollTo('product-card-petzy')} className="hover:text-white transition-colors cursor-pointer text-left focus:outline-none">
-                  Utilitários Petzy
                 </button>
               </li>
             </ul>
@@ -107,7 +102,7 @@ export const Footer: React.FC = () => {
         {/* Separator / Legal Copyright */}
         <div className="pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-xs text-slate-600 font-mono">
-            &copy; {currentYear} Capy Labs Inc. Todos os direitos reservados.
+            &copy; {currentYear} HEFESTUS Inc. Todos os direitos reservados.
           </div>
           <div className="text-[10px] font-mono text-emerald-500/60 uppercase tracking-widest">
             Desenvolvido com disciplina absoluta em SF &amp; SP
